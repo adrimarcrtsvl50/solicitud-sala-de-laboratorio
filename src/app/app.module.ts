@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,19 +8,22 @@ import { HomeComponent } from './components/home/home.component';
 import { SolitudsalaComponent } from './components/solitudsala/solitudsala.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DynamicFormBuilder } from 'ngx-dynamic-form-builder';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    SolitudsalaComponent
+    SolitudsalaComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSlideToggleModule
   ],
   providers: [    DynamicFormBuilder],
   bootstrap: [AppComponent]

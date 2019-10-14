@@ -12,3 +12,11 @@
 nav a{
     color: white !important;
 }
+
+.nav-item{
+    transition-duration: 0.5s;
+}
+
+.nav-item:hover{
+    transform: scale(1.2);
+}
