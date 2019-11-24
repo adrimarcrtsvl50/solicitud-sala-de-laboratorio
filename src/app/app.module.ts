@@ -18,6 +18,8 @@ import {
   MatCardModule, MatDialogModule, MatInputModule, MatTableModule,
   MatToolbarModule, MatMenuModule,MatIconModule, MatProgressSpinnerModule
 } from '@angular/material';
+import { AutorizacionComponent } from './autorizacion/autorizacion.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +28,7 @@ import {
     SolitudsalaComponent,
     LoginComponent,
     RegisterComponent,
+    AutorizacionComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,9 +39,7 @@ import {
     MatSelectModule,
     MatButtonModule,
     BrowserAnimationsModule,
-    
-    
-    
+    HttpClientModule
     ],
     
   providers: [    DynamicFormBuilder],
