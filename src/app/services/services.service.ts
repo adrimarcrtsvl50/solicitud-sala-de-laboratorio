@@ -18,4 +18,10 @@ export class ServicesService {
   getSolicitud(id:number){
     return this.http.get<Usuarios>(this.path+'/'+id);
   }
+  aprobarSolicitud(solicitud:Usuarios){
+    return this.http.put<Usuarios>(this.path+'/aprobar/'+solicitud.idSolicitud, solicitud);
+  }
+  rechazarSolicitud(solicitud:Usuarios){
+    return this.http.put<Usuarios>(this.path+'/rechazar/'+solicitud.idSolicitud, solicitud);
+  }
 }

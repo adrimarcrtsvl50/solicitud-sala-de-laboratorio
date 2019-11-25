@@ -1,11 +1,12 @@
 export class Usuarios {
+    idSolicitud:number;
     fecha_solicitud:Date;
 	fecha_programada:Date;
-    laboratorio:number;
+    laboratorio:string;
     asignatura:string;
-    docente:number;
+    docente:string;
     practica:string;
-    facultad:number;
+    facultad:string;
     maquinas:boolean;
     cantidad_maquinas:number;
     material:boolean;
@@ -15,5 +16,5 @@ export class Usuarios {
     observaciones:string;
     hora_entrada:string;
     hora_salida:string;
-    estado_solicitud:boolean;
+    estado_solicitud:string;
 }
